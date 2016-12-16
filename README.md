@@ -10,7 +10,7 @@ The original Sator Square is:
         O P E R A  
         R O T A S  
   
-More information on this square can be found in its [wikipedia article](https://en.wikipedia.org/wiki/Sator_Square), but the project's primary interest is in the square's symmetry. From the article:
+More information on this square can be found in its [wikipedia article](https://en.wikipedia.org/wiki/Sator_Square), but this project's primary interest is in the square's symmetry. From the article:
 > The words may be read top-to-bottom, bottom-to-top, left-to-right, or right-to-left. When read top-to-bottom and left-to-right, it forms the palindromic sentence "sator arepo tenet opera rotas". Its translation has been the subject of speculation with no clear consensus, but a common interpretation is "the farmer Arepo works a plough".
 
-Given a list of words, the initial scope of this project is to find all (or nearly all) Sator Squares that can be created from the list. Future enhancements may utlilize NLP techniques determine if a given square is a valid sentence.
+Given a list of words, the initial scope of this project is to find all (or nearly all) Sator Squares that can be created from that list. Future enhancements may utlilize NLP techniques to determine if a given square is a valid sentence.
