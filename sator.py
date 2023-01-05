@@ -19,7 +19,7 @@ sator_squares = []
 
 def is_palindrome(word):
     """Test whether a word is a palindrome by comparing it to a reversed version of itself"""
-    if len(word)%2 != 0 and word == word[::-1]:
+    if len(word) % 2 != 0 and word == word[::-1]:
         return True
     else:
         return False
@@ -28,7 +28,7 @@ def is_palindrome(word):
 def is_emordnilap(word):
     """Test whether a reversed word appears in a list of words"""
     # this is very slow. use better search algorithm (binary)?
-    if len(word)%2 != 0 and word != word[::-1] and word[::-1] in candidate_words:
+    if len(word) % 2 != 0 and word != word[::-1] and word[::-1] in candidate_words:
         return True
     else:
         return False
@@ -44,7 +44,7 @@ def find_sator_squares(word_length, palindrome):
         else:
             sator_components.append(emordnilaps[word_length][palindrome[letter_index]])
         letter_index += 1
-    print palindrome, sator_components
+    print(palindrome, sator_components)
 
 
 for word in word_file:
@@ -54,7 +54,7 @@ for word in candidate_words:
     if is_palindrome(word):
         palindromes[len(word)].append(word)
     elif is_emordnilap(word):
-        emordnilaps[len(word)][word[(len(word)/2)]].append(word)
+        emordnilaps[len(word)][word[int(len(word)/2)]].append(word)
 
 for length in palindromes:
     # replace 'key' and 'value' with 'length' and 'word'?
